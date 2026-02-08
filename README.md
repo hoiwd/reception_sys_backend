@@ -45,9 +45,6 @@ Brief description of what the project does.
 - How migrations work
 - How to reset DB in development
 
-## How to Run
-Steps to run the project locally.
-
 ## Tech Stack
 - Python
 - SQLite
@@ -70,9 +67,7 @@ Steps to run the project locally.
 ---
 
 ## Setup & Usage
-
-1. Clone the repo:
-
+- Clone the repo:
 `bash
 git clone <repo-url>
 cd reception_sys# reception_sys_backend
