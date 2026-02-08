@@ -77,4 +77,4 @@ Steps to run the project locally.
 
 `bash
 git clone <repo-url>
-cd project_1# reception_sys_backend
+cd reception_sys# reception_sys_backend
