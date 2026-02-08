@@ -3,19 +3,39 @@
 ## Overview
 Brief description of what the project does.
 
-## Architecture
-Explain Clean Architecture + CQRS-lite.
+- Entities: Guest entity (domain/entities.py)  
+- Repositories: Abstract interface + SQLite implementation  
+- Read Models: CQRS-lite optimized for querying active or historical guests  
+- Services: Orchestrate adding, withdrawing, restoring guests  
+- Utils: Validators and helpers 
 
-## Features
-- Guest check-in
-- Soft delete (withdraw)
-- Prevent double booking
-- SQLite persistence
-- Read models with indexes
+## Architecture
+###Explain Clean Architecture + CQRS-lite.
+
+ ## Features
+  - Guest check-in
+  - Soft delete (withdraw)
+  - Prevent double booking
+  - SQLite persistence
+  - Read models with indexes
 
 ## Project Structure
 Show folder tree with explanations.
 
+         *---------------*
+         |    main.py    | <-- CLI / API entry point
+         *---------------*
+                 |
+        *-------------------*
+        |     Services      | <-- Business use cases
+        *-------------------*
+          |               |
+       Repositories     Read Models
+      (write/commands)  (read/queries)
+            |            |
+            *------------*
+            |   SQLite   | <-- Database with soft deletes, 
+            *------------*     indexes 
 ## Database
 - Schema overview
 - Soft delete strategy
@@ -38,29 +58,7 @@ Steps to run the project locally.
 - REST API (FastAPI)
 - Authentication
 - PostgreSQL
-
-
-         *---------------*
-         |    main.py    | <-- CLI / API entry point
-         *---------------*
-                 |
-        *-------------------*
-        |     Services      | <-- Business use cases
-        *-------------------*
-          |               |
-       Repositories     Read Models
-      (write/commands)  (read/queries)
-            |            |
-            *------------*
-            |   SQLite   | <-- Database with soft deletes, 
-            *------------*     indexes 
-
-- Entities: Guest entity (domain/entities.py)  
-- Repositories: Abstract interface + SQLite implementation  
-- Read Models: CQRS-lite optimized for querying active or historical guests  
-- Services: Orchestrate adding, withdrawing, restoring guests  
-- Utils: Validators and helpers  
-
+  
 ---
 
 ## Requirements
