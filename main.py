@@ -22,7 +22,7 @@ def main():
 
     # run_app
     # service.guest_add("ALICE", 64, 3)
-    service.restore_guest("ALICE", 76, 3)
+    # service.restore_guest("ALICE", 77, 3)
     # service.guest_add("BOB", 64, 2)
     # service.withdraw_guest("ALICE")
     # service.withdraw_guest("BOB")
