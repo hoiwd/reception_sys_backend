@@ -1,0 +1,15 @@
+# Python
+pycache/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# SQLite databases
+*.db
+*.sqlite3
+*.db.bak
+
+# IDE
+.idea/

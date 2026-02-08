@@ -1,0 +1,80 @@
+# Reception_backend
+
+## Overview
+Brief description of what the project does.
+
+## Architecture
+Explain Clean Architecture + CQRS-lite.
+
+## Features
+- Guest check-in
+- Soft delete (withdraw)
+- Prevent double booking
+- SQLite persistence
+- Read models with indexes
+
+## Project Structure
+Show folder tree with explanations.
+
+## Database
+- Schema overview
+- Soft delete strategy
+- Partial unique indexes
+
+## Migrations
+- How migrations work
+- How to reset DB in development
+
+## How to Run
+Steps to run the project locally.
+
+## Tech Stack
+- Python
+- SQLite
+- Clean Architecture
+- CQRS-lite
+
+## Upcoming Improvements
+- REST API (FastAPI)
+- Authentication
+- PostgreSQL
+
+
+         *---------------*
+         |    main.py    | <-- CLI / API entry point
+         *---------------*
+                 |
+        *-------------------*
+        |     Services      | <-- Business use cases
+        *-------------------*
+          |               |
+       Repositories     Read Models
+     (write/commands)  (read/queries)
+            |            |
+            *------------*
+            |   SQLite   | <-- Database with soft deletes, 
+            *------------*     indexes 
+
+- Entities: Guest entity (domain/entities.py)  
+- Repositories: Abstract interface + SQLite implementation  
+- Read Models: CQRS-lite optimized for querying active or historical guests  
+- Services: Orchestrate adding, withdrawing, restoring guests  
+- Utils: Validators and helpers  
+
+---
+
+## Requirements
+
+- Python 3.10+  
+- SQLite (bundled with Python)  
+- Optional: pytest for running tests  
+
+---
+
+## Setup & Usage
+
+1. Clone the repo:
+
+`bash
+git clone <repo-url>
+cd project_1# reception_sys_backend

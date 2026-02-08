@@ -1,0 +1,11 @@
+[project_1]
+name = "hotel"
+version = "0.1.0"
+description = "Hotel reception backend system"
+authors = [{ name = "Umur Niyozov" }]
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
