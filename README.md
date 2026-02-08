@@ -20,7 +20,7 @@ Brief description of what the project does.
   - Read models with indexes
 
 ## Project Structure
-Show folder tree with explanations.
+- Folder tree with explanations:
 
          *---------------*
          |    main.py    | <-- CLI / API entry point
