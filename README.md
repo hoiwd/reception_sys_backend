@@ -9,8 +9,8 @@ Brief description of what the project does.
 - Services: Orchestrate adding, withdrawing, restoring guests  
 - Utils: Validators and helpers 
 
-## Architecture
-### Explain Clean Architecture + CQRS-lite.
+ ## Architecture
+  - Explain Clean Architecture + CQRS-lite.
 
  ## Features
   - Guest check-in
