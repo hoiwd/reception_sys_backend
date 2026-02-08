@@ -1,7 +1,7 @@
 # Reception_backend
 
 ## Overview
-### Brief description of what the project does.
+### Brief description of what the project does:
 
 - Entities: Guest entity (domain/entities.py)  
 - Repositories: Abstract interface + SQLite implementation  
