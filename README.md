@@ -49,7 +49,7 @@ Steps to run the project locally.
         *-------------------*
           |               |
        Repositories     Read Models
-     (write/commands)  (read/queries)
+      (write/commands)  (read/queries)
             |            |
             *------------*
             |   SQLite   | <-- Database with soft deletes, 
