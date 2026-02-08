@@ -10,7 +10,7 @@ Brief description of what the project does.
 - Utils: Validators and helpers 
 
  ## Architecture
-  - Explain Clean Architecture + CQRS-lite.
+  - Clean Architecture + CQRS-lite.
 
  ## Features
   - Guest check-in
